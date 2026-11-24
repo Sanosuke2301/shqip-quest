@@ -69,7 +69,24 @@ export const LESSONS = [
       { type:'choice', prompt:'Which phrase means “please”?', options:['Të lutem','Si je?','Mirupafshim'], answer:'Të lutem', note:'Të lutem means please.' },
       { type:'choice', prompt:'Which informal word can mean both “hi” and “bye” in Kosovo?', options:['Tung','Jam','Mirë'], answer:'Tung', note:'Tung can be used for hello or goodbye.' }
     ]
+  },
+  {
+    id:'family-1', short:'Family pictures', title:'Familja: Family pictures', unit:'Familja', emoji:'👨‍👩‍👧', kind:'lesson',
+    desc:'Meet familiar family words with picture-matching practice.',
+    cards:[
+      {al:'Nëna',en:'Mother',variety:'Standard',note:'A standard Albanian word for mother. Family usage may also include mami.'},
+      {al:'Baba',en:'Dad / Father',variety:'Common Kosovo/Gheg',note:'A familiar everyday expression for dad in Kosovo.'},
+      {al:'Motra',en:'Sister',variety:'Standard / Both',note:'A word used to refer to your sister.'}
+    ],
+    questions:[
+      {type:'picture',prompt:'Which picture best represents “nëna” (mother)?',options:['👩','🐈','🚗'],labels:['Mother','Cat','Car'],answer:'👩',note:'Nëna means mother.'},
+      {type:'choice',prompt:'What does “baba” commonly mean in Kosovo Albanian?',options:['Dad','Sister','Grandma'],answer:'Dad',note:'Baba is a familiar word for dad.'},
+      {type:'picture',prompt:'Choose a picture representing a sister.',options:['🚲','👧','🍎'],labels:['Bicycle','Girl','Apple'],answer:'👧',note:'Motra means sister. The picture is a visual clue, not a definition of family relationships.'},
+      {type:'choice',prompt:'What does “motra” mean?',options:['Sister','Brother','Mother'],answer:'Sister',note:'Motra is Albanian for sister.'},
+      {type:'arrange',prompt:'Put the words together to say “my sister”.',tokens:['ime','Motra'],answer:'Motra ime',note:'Motra ime means my sister.'}
+    ]
   }
+
 ];
 
 export const BADGES = [
